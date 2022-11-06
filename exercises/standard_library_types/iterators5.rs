@@ -21,6 +21,7 @@ enum Progress {
     Complete,
 }
 
+
 fn count_for(map: &HashMap<String, Progress>, value: Progress) -> usize {
     let mut count = 0;
     for val in map.values() {

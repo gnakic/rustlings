@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "rustlings watch",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=rustlings",
+                    "--package=rustlings"
+                ],
+                "filter": {
+                    "name": "rustlings",
+                    "kind": "bin"
+                }
+            },
+            "args": ["watch"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
